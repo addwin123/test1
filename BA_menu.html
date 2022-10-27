@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="promotion.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <title>Bon Appetit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&family=STIX+Two+Text&display=swap"
+        rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- live chat source -->
+    <script src="https://kit.fontawesome.com/c1e827cb15.js" crossorigin="anonymous"></script>
+    <link href="livechat.css" rel="stylesheet" />
+    <script type="text/javascript" src="livechat.js"></script>
+    <!-- sent -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <!-- header -->
+    <nav>
+        <div class="logo" style="width: 30%;">
+            <a href="BA_home.html"><img class="pic1" src="Logo.png"></a>
+        </div>
+        <ul>
+            <li><a href="BA_home.html">Home</a></li>
+            <li><a href="BA_aboutUs.html">About Us</a></li>
+            <li><a href="BA_menu.html">Menu</a></li>
+            <li><a href="BA_service.html">Service</a></li>
+            <li><a href="BA_gallery.html">Gallery</a></li>
+            <li><a href="BA_order.html">Order Online</a></li>
+            <li><a href="BA_contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- menu -->
+    <button onclick="topFunction() " id="YTBtn" style="text-align: center;">
+
+        <i class="material-icons" style="  margin-right: 10px;">arrow_upward</i>
+    </button>
+
+    <i onclick="onOroff(this);displayLivechat();" class="fas fa-comment-dots" id="myButton"></i>
+
+    <!-- livechat -->
+    <div class="real-Livechat" id="rLC">
+
+        <div class="real-wrapper">
+            <div class="real-head-text"><img src="agent001.jpg" id="copy" alt="Avatar" class="avatar">agent 007<i
+                    class="fa fa-circle" style="color:rgb(101, 209, 115);font-size:8px;margin-left: 5px;"></i></div>
+            <div class="real-chatlog" id="real-ChatLog">
+                <p></p>
+            </div>
+            <div class="real-field">
+                <input type="text" id="usermsg" value="" placeholder="type a message">
+                <i onclick="Click();Click2();" class="material-icons" value="" id="submitmsg">send</i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myButton");
+
+        //Show button when user scroll
+        window.onscroll = function () { scrollFunction() };
+        //Get the button
+        var button = document.getElementById("YTBtn");
+
+        //To the top function when clicked
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+                mybutton.style.display = "block";
+                mybutton.style.color = "grey";
+                button.style.display = "block";
+            } else {
+                // mybutton.style.display = "none";
+
+                mybutton.style.color = "black";
+                button.style.display = "none";
+        }
+    }
+        
+
+    </script>
+    <fieldset id="page">
+        <div class="Category">
+            <img
+                src="https://lh3.googleusercontent.com/proxy/t0EPzn60G2SZFitMegR_7s6GajfqDtlDAnDj9Pt85oVv2oATWxRc3iBq9jfKT4HihHqrdpNWxilJMHjnk_Bn7YHI4LvEOHO_qBcmfPzHnBbwz-aM2ioGvBxoXA" />
+            <a href="#appertizers" id="x1">Appertizers</a>
+            <a href="#Main">Main Course</a>
+            <a href="#desserts">Desserts</a>
+        </div>
+
+        <div class="appertizers">
+            <h1 id="appertizers">Appertizers</h1>
+            <dl>
+                <dt class="header">Escargots la Bourguignonne RM20</dt>
+                <dt class="descript">Snail prepared in Garlic-Herb butter</dt>
+
+                <hr style="width: 70%; color: black" />
+
+                <dt class="header">Local Wild Mushroom Soup RM 20</dt>
+                <dt class="descript">
+                    Local seasonal creamy wild mushroom soup with roasted garlic
+                    baguette
+                </dt>
+
+                <hr style="width: 70%" />
+
+                <dt class="header">Soup à l'ail RM 16</dt>
+                <dt class="descript">
+                    French garlic soup served with olive oil browned baguette
+                </dt>
+            </dl>
+        </div>
+
+        <div class="main">
+            <h1 id="Main">Main Course</h1>
+            <dl>
+                <dt class="header">Confit de Canard RM 45</dt>
+                <dt class="descript">
+                    Saute local Duck drumstick served with saute seasoned potatoes with
+                    signature sauce
+                </dt>
+
+                <hr style="width: 70%" />
+
+                <dt class="header">Boeuf Bourguignon RM 50</dt>
+                <dt class="descript">
+                    Red Wine based beef stew with various vegetables
+                </dt>
+
+                <hr style="width: 70%" />
+
+                <dt class="header">Bouillabaisse RM 50</dt>
+                <dt class="descript">
+                    Cuisine that cook with shell fish and different types of fish served
+                    with rouille and grilled baguette slide
+                </dt>
+
+                <hr style="width: 70%" />
+
+                <dt class="header">Lamb Shanks with Espagnole RM 60</dt>
+                <dt class="descript">
+                    Lamb Shanks served with French Brown Sauce and sautee local seasonal
+                    vegetables
+                </dt>
+            </dl>
+        </div>
+
+        <div class="desserts">
+            <h1 id="desserts">Desserts</h1>
+            <dl>
+                <dt class="header">Creme Brulee Rm 16</dt>
+                <dt class="descript">
+                    Custard Based dessert topped with a layer of crunchy brown sugar
+                </dt>
+
+                <hr style="width: 70%" />
+
+                <dt class="header">Tarte au Citron RM 15</dt>
+                <dt class="descript">French lemon tart make with local lemon</dt>
+            </dl>
+        </div>
+    </fieldset>
+
+    <!-- promotion -->
+    <div class="product-section">
+        <div class="container">
+            <center>
+                <h2 class="font-weight-bold mb-0 text-center">Promotion</h2>
+            </center>
+            <hr class="hr1 mb-5 mt-2">
+            <div class="row">
+                <div class="flex-c">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 box">
+                        <div class="inner">
+                            <div class="img">
+                                <img src="images/Confit.jpg" width="100%" class="img-fluid img1">
+                                <h5 class="mb-0">Confit de Canard</h5>
+
+                                <div class="tag">
+                                    <p>-RM5</p>
+                                </div>
+                            </div>
+                            <div class="txt d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <p class="mb-0">For RM45.00</p>
+                                </div>
+                                <div class="text-right">
+                                    <a href="BA_order.html" class="btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 box">
+                        <div class="inner">
+                            <div class="img">
+                                <img src="images/Bouillabaisse.jpeg" width="100%" class="img-fluid img1">
+                                <h5 class="mb-0">Bouillabaisse</h5>
+
+                                <div class="tag">
+                                    <p>-RM5</p>
+                                </div>
+                            </div>
+                            <div class="txt d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <p class="mb-0">For RM50.00</p>
+                                </div>
+                                <div class="text-right">
+                                    <a href="BA_order.html" class="btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 box">
+                        <div class="inner">
+                            <div class="img">
+                                <img src="images/Boeuf.jpg" width="100%" class="img-fluid img1">
+                                <h5 class="mb-0">Boeuf Bourguignon</a></h5>
+
+                                <div class="tag">
+                                    <p>-RM5</p>
+                                </div>
+                            </div>
+                            <div class="txt d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <p class="mb-0">For Rm50.00</p>
+                                </div>
+                                <div class="text-right">
+                                    <a href="BA_order.html" class="btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 box">
+                        <div class="inner">
+                            <div class="img">
+                                <img src="images/Lamb.jpg" width="100%" class="img-fluid img1">
+                                <h5 class="mb-0">Lamb Shanks with Espagnole</h5>
+
+                                <div class="tag">
+                                    <p>-RM5</p>
+                                </div>
+                            </div>
+                            <div class="txt d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <p class="mb-0">For RM60.00</p>
+                                </div>
+                                <div class="text-right">
+                                    <a href="BA_order.html" class="btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="flex-c">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 box">
+                        <div class="inner">
+                            <div class="img">
+                                <img width="100%" src="images/Escargots.jpg" class="img-fluid img1">
+                                <h5 class="mb-0">Escargots la Bourguignonne</h5>
+
+                                <div class="tag">
+                                    <p>-RM5</p>
+                                </div>
+                            </div>
+                            <div class="txt d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <p class="mb-0">For RM20.00</p>
+                                </div>
+                                <div class="text-right">
+                                    <a href="BA_order.html" class="btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 box">
+                        <div class="inner">
+                            <div class="img">
+                                <img width="100%" src="images/Wild.jpg" class="img-fluid img1">
+                                <h5 class="mb-0">Local Wild Mushroom Soup</h5>
+
+                                <div class="tag">
+                                    <p>-RM5</p>
+                                </div>
+                            </div>
+                            <div class="txt d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <p class="mb-0">For RM20.00</p>
+                                </div>
+                                <div class="text-right">
+                                    <a href="BA_order.html" class="btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 box">
+                        <div class="inner">
+                            <div class="img">
+                                <img width="100%" src="images/Soup.jpeg" class="img-fluid img1">
+                                <h5 class="mb-0">Soup à l'ail</h5>
+
+                                <div class="tag">
+                                    <p>-RM5</p>
+                                </div>
+                            </div>
+                            <div class="txt d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <p class="mb-0">For RM16.00</p>
+                                </div>
+                                <div class="text-right">
+                                    <a href="BA_order.html" class="btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 box">
+                        <div class="inner">
+                            <div class="img">
+                                <img width="100%" src="images/Creme.jpg" class="img-fluid img1">
+                                <h5 class="mb-0">Creme Brulee</h5>
+
+                                <div class="tag">
+                                    <p>-RM5</p>
+                                </div>
+                            </div>
+                            <div class="txt d-flex justify-content-between align-items-center">
+                                <div class="mr-2">
+                                    <p class="mb-0">For RM16.00</p>
+                                </div>
+                                <div class="text-right">
+                                    <a href="BA_order.html" class="btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+    </script>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section address">
+                <h3>Address</h3>
+                <p>No, 109, Jalan SS 21/1a, <br>Damansara Utama, <br>47400 Petaling Jaya, <br>Selangor</p>
+            </div>
+
+            <div class="footer-section opening-hour">
+                <h3>Opening Hours</h3>
+                <p>Mon - Fri : 11a.m. - 10p.m.<br>Sat - Sun : 11a.m. - 12a.m.</p>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <a href="mailto:bon_appetit@gmail.com">bon_appetit@gmail.com</a><br>
+                <a href="tel:+03-1234 5678">03-1234 5678</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

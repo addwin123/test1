@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bon Appetit Contact Us</title>
+    <meta charset="utf=8">
+    <meta name="viewport" content="width=devide-width,initial-scale=1.0">
+    <meta name="keyword" content="contact us,bon appetit,french food,wine">
+    <link href="contact.css" rel="stylesheet" />
+    <link rel="stylesheet" href="basic.css">
+
+    <!-- live chat code -->
+    <link href="livechat.css" rel="stylesheet" />
+    <script type="text/javascript" src="livechat.js"></script>
+    <script src="https://kit.fontawesome.com/c1e827cb15.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&family=STIX+Two+Text&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <!--Header-->
+
+    <nav>
+        <div class="logo" style="width: 30%;">
+            <a href="BA_home.html"><img class="pic1" src="Logo.png"></a>
+        </div>
+        <ul>
+            <li><a href="BA_home.html">Home</a></li>
+            <li><a href="BA_aboutUs.html">About Us</a></li>
+            <li><a href="BA_menu.html">Menu</a></li>
+            <li><a href="BA_service.html">Service</a></li>
+            <li><a href="BA_gallery.html">Gallery</a></li>
+            <li><a href="BA_order.html">Order Online</a></li>
+            <li><a href="BA_contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <h1 class="h1">Let's talk</h1>
+    <h2 class="disney" style="text-align: center; opacity: 50%;">
+        <hr class="hr1">
+        We'd like to hear from you
+    </h2>
+
+
+    <div class="form-position">
+
+        <form name="form" id="form-style" onsubmit="return validateForm()" method="post" id="form">
+
+
+            <select id="type" name="inquiry">
+                <option value="request">request</option>
+                <option value="question">question</option>
+                <option value="other">other</option>
+            </select><br><br>
+            <div class="nameflex">
+                <Input type="text" id=Fname name="name" placeholder="First name" required>
+                <Input type="text" id=Lname name="name" placeholder="Last name" required><br><br>
+            </div>
+
+            <input type="tel" id="phone" name="phone" placeholder="011-123-5678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <br><br>
+            <input type="email" id=email name="email" placeholder="Email address" required><br><br>
+
+            <textarea id="description" name="Description" placeholder="Explain your queries..."></textarea>
+            <fieldset>
+                <legend>Are you existing customer?</legend>
+                <label>
+                    <input type="radio" name="radio-button" id="yes" />
+                    <span>Yes</span>
+                </label>
+                <label>
+                    <input type="radio" name="radio-button" id="no" />
+                    <span>No</span>
+                </label>
+            </fieldset>
+            <br>
+            <br><br>
+            <input type="submit" name="submit" onclick="validateForm()" value="Submit">
+
+        </form>
+
+    </div>
+
+    <iframe id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.9633263020544!2d101.62057387493843!3d3.1334370045864732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4935e4e2cf79%3A0xd6e48b4ff1fa7b01!2s109%2C%20Jalan%20SS%2021%2F1a%2C%20Damansara%20Utama%2C%2047400%20Petaling%20Jaya%2C%20Selangor!5e0!3m2!1sen!2smy!4v1628364550629!5m2!1sen!2smy"
+        width=500 height=300 loading="lazy" ;></iframe>
+    <div class="social-media-icon">
+        <i class="fab fa-twitter" id="twt"></i>
+        <i class="fab fa-facebook-messenger" id="ms"></i>
+        <i class="fab fa-instagram" id="insta"></i>
+    </div>
+    <div class="social-media">
+
+        <a href="tel:03-1234-5678">
+            <tel>
+                <i class="fas fa-phone-alt" id="contact-icon"></i>
+                <span id="bonphone">
+                    Phone: 011-1234-5678
+                </span>
+        </a>
+    </div>
+    <div class="social-media">
+        <a href="mailto:bon_appetit@gmail.com">
+            <i class="far fa-envelope" id="email-icon"></i>
+            <span id="bonemail">
+                bon_appetit@gmail.com
+            </span>
+        </a>
+    </div>
+
+
+    <div class="faq">
+        <hr class="hr2">
+        <h3>Frequently ask question</h3>
+        <div class="top">
+            <a href="BA_FAQ.html">Visit FAQ Page</a>
+        </div>
+    </div>
+
+
+    <i onclick="onOroff(this) ;displayLivechat();" class="fas fa-comment-dots" id="myButton"></i>
+    <div class="real-Livechat" id="rLC">
+
+        <div class="real-wrapper">
+            <div class="real-head-text"><img src="agent001.jpg" id="copy" alt="Avatar" class="avatar">agent 007
+            </div>
+            <div class="real-chatlog" id="real-ChatLog">
+                <p></p>
+            </div>
+            <div class="real-field">
+                <input type="text" id="usermsg" value="" placeholder="type a message">
+                <i onclick="Click();Click2();" class="material-icons" value="" id="submitmsg">send</i>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section address">
+                    <h3>Address</h3>
+                    <p>No, 109, Jalan SS 21/1a, <br>Damansara Utama, <br>47400 Petaling Jaya, <br>Selangor</p>
+                </div>
+
+                <div class="footer-section opening-hour">
+                    <h3>Opening Hours</h3>
+                    <p>Mon - Fri : 11a.m. - 10p.m.<br>Sat - Sun : 11a.m. - 12a.m.</p>
+                </div>
+
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <a href="mailto:bon_appetit@gmail.com">bon_appetit@gmail.com</a><br>
+                    <a href="tel:+03-1234 5678">03-1234 5678</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function validateForm() {
+            let x = document.forms["form"]["Fname"].value;
+            let a = document.forms["form"]["Lname"].value;
+            let y = document.forms["form"]["email"].value;
+            let b = document.forms["form"]["description"].value;
+            let c = document.forms["form"]["phone"].value;
+            let d = document.forms["form"]["yes"].value;
+            let e = document.forms["form"]["no"].value;
+            if (x != "" && y != "" && a != "" && b != "" && c != "" && d != "") {
+                alert("Thanks for your submission");
+                document.forms["form"]["Fname"].value = '';
+                document.forms["form"]["Lname"].value = '';
+                document.forms["form"]["email"].value = '';
+                document.forms["form"]["description"].value = '';
+                document.forms["form"]["phone"].value = '';
+                document.forms["form"]["yes"].value = '';
+                document.forms["form"]["no"].value = '';
+                return false;
+
+            }
+        }
+        var mybutton = document.getElementById("myButton");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+                mybutton.style.display = "block";
+                mybutton.style.color = "grey";
+            } else {
+                mybutton.style.color = "black";
+            }
+        }
+
+    </script>
+</body>
+
+
+
+
+</html>

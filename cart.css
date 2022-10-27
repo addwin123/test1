@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body {
+  
+  font-family: "STIX Two Text", serif;
+  padding: 5px;
+  /* display: block; */
+  /* font-size: 18px; */
+}
+
+div#cart {
+  width: 50%;
+  background-color: #eeeeee;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 15px auto;
+  padding: 10px 30px;
+}
+
+h3{
+  font-size: 18px;
+  text-align: center;
+}
+
+.iconcart {
+  margin-left: 50px;
+}
+
+.payment {
+  font-size: 18px;
+  float: right;
+  text-decoration: none;
+  background-color: #222831;
+  color: #eeeeee;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.pay_contain {
+  width: 100%;
+}
+
+.payment:hover {
+  background-color: #393e46;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+thead,
+tbody {
+  border: 2px solid #222831;
+  border-collapse: collapse;
+}
+
+table tfoot,
+tfoot td {
+  border: none;
+  font-size: 18px;
+}
+
+th {
+  padding: 15px 20px;
+  background-color: #222831;
+  color: #eeeeee;
+  vertical-align: center;
+  font-size: 18px;
+}
+
+td {
+  padding: 10px 30px;
+  border-bottom: 2px solid #222831;
+  font-size: 18px;
+}

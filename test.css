@@ -1,0 +1,351 @@
+/* .aboutUs{
+    width: 100%;
+    min-height: 50vh;
+}
+
+.container{
+    width: 80%;
+    display:block ;
+    margin: 5px auto;
+    padding-top: 50px;
+}
+
+.content-section{
+    float: right;
+    width: 55%;
+}
+
+.image-section{
+    float: left;
+    width: 40%;
+}
+
+.image-section img{
+    width: 90%;
+    height: auto;
+}
+
+.button{
+    padding:10px 10px ;
+    border: none;
+    font-size: 18px;
+    border-radius:50px ;
+    box-shadow:#393E46;
+    cursor: pointer;
+    width:120px;
+    text-align: center;
+    border: 3px solid #393E46;
+}
+
+.button a{
+    color: #393E46;
+    text-decoration: none;
+    width: 100%;
+}
+
+.button:hover{
+    transform: scale(1.05);
+    background-color: #393E46;
+}
+
+.button a:hover{
+    color: #FFD369;
+}  */
+
+/*body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-top{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("Background1.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    animation: slide 10s infinite;
+    opacity: 0.7;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content h1{
+    color:  #EEEEEE;
+    font-size: 60px;
+    letter-spacing: 16px;
+}
+
+@keyframes slide {
+    0%{background-image: url("Background1.jpg");}
+    33%{background-image: url("background2.jpg");}
+    67%{background-image: url("Background3.jpg");}
+}*/
+
+
+/* .form-field{
+    display: flex;
+    justify-content: space-between;
+}
+
+input,select{
+    pad: 10px 15px;
+    margin-left: 80px;
+    height: 35px;
+}
+
+.btn{
+    background: #393E46;
+    color: #EEEEEE;
+    padding:10px 20px ;
+    border: none;
+    font-size: 18px;
+    border-radius:80px ;
+    /* box-shadow: ; 
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.03);
+}
+.reservation img{
+    object-fit: cover;
+}
+
+.reservation-form{
+    padding: 30px 0;
+    margin: 0 auto;
+    
+}
+
+form{
+    display: grid;
+    grid-row-gap:5px;
+   
+}
+
+form p{
+    font-weight: 600;
+} */
+
+/*.reservation {
+    margin: 20px 300px 10px 250px;
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}*/
+
+/* RESERVATION */
+/* .reservation {
+    display: flex;
+}
+
+.title{
+    margin-top: 50px;
+}
+
+h2{
+    text-align: center;
+    margin:auto;
+    margin-left: 350px;
+    margin-right: 400px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    color: #222831;
+}
+
+#title1{
+    font-family: 'Nova Mono', monospace;
+}
+
+#title3{
+    font-family: 'Dancing Script', cursive;
+}
+
+.reservation form{
+    margin-top: 30px;
+    line-height: 2.3;
+    font-size: 20px;
+}
+
+input,select{
+    box-sizing: border-box;
+}
+
+.btn{
+    color: #393E46;
+    margin-left: 40px;
+    padding:5px 20px ;
+    border: 1px solid #393E46;
+    font-size: 18px;
+    border-radius:80px ;
+    /* box-shadow: ; 
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #393E46;
+    color: #FFD369;
+    transform: scale(1.03);
+} */
+
+/* .happening{
+    width: 70%;
+    border:5px double #393E46;
+    margin-left:225px; 
+}
+
+#title2{
+    text-align: center;
+}
+
+.image-img{
+  width: 300px;
+  height:250px;
+  padding-left: 40px;
+}
+
+.happening-content{ 
+    display: flex;
+}
+
+.happening h3{
+    text-align: center;
+    padding-left: 40px;
+}
+
+.happening-section{
+    position: relative;
+}
+
+.happening-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 40px;
+    /* width: 100%;
+    height: 100%; 
+    width: 300px;
+    height:250px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #EEEEEE;
+    /*   font-family:; 
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition:opacity 0.25s;
+    backdrop-filter:blur(5px); /* blur effect
+}
+
+.happening-overlay:hover{
+    opacity: 1;
+}
+
+.happening-description{
+    padding: 20px;
+    text-align: center;
+} */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: red;
+    line-height: 75px;
+    padding: 0px 80px;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav img {
+    width: 100%;
+    height: 65px;
+    padding-top: 10px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+
+nav ul li a:hover {
+    color: pink;
+}
+
+nav ul .active {
+    color: black;
+}
+
+.checkbtn {
+    color:black;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media screen and (max-width:990px) {
+    nav {
+        padding: 0px 50px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 100vh;
+        background-color: green;
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: 0.4s ease;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 60px 0px;
+        line-height: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}

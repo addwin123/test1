@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Online</title>
+  <link rel="stylesheet" href="table.css" />
+  <link rel="stylesheet" href="basic.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&family=STIX+Two+Text&family=STIX+Two+Text:wght@700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/76e8c0ea31.js" crossorigin="anonymous"></script>
+
+  <!-- live chat source -->
+  <script src="https://kit.fontawesome.com/c1e827cb15.js" crossorigin="anonymous"></script>
+  <link href="livechat.css" rel="stylesheet" />
+  <script type="text/javascript" src="livechat.js"></script>
+  <!-- sent -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <nav>
+      <div class="logo" style="width: 30%">
+        <a href="BA_home.html"><img class="pic1" src="Logo.png" /></a>
+      </div>
+      <ul>
+        <li><a href="BA_home.html">Home</a></li>
+        <li><a href="BA_aboutUs.html">About Us</a></li>
+        <li><a href="BA_menu.html">Menu</a></li>
+        <li><a href="BA_service.html">Service</a></li>
+        <li><a href="BA_gallery.html">Gallery</a></li>
+        <li><a href="BA_order.html">Order Online</a></li>
+        <li><a href="BA_contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Header -->
+  <div class="Header">
+    <h2>Order Online</h2>
+    <hr style="width: 40%; text-align: center" />
+    <div class="Menu">Menu</div>
+  </div>
+
+  <!-- Table order -->
+  <table id="table_menu">
+    <colgroup>
+      <col id="firstcol" />
+      <col class="header" span="3" />
+    </colgroup>
+    <thead>
+      <tr class="table_top">
+        <th>Meal</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+      <tr class="appertizers">
+        <th>Appertizers</th>
+        <th>
+          <select name="appertizers" id="appertizers">
+            <option value="" selected disabled hidden>Please Select</option>
+            <option value="soup">Soup à l'ail</option>
+            <option value="snail">Escargots la Bourguignonne</option>
+            <option value="mushroom">Local Wild Mushroom Soup</option>
+          </select>
+        </th>
+        <th><input id="app_q" type="number" value="1" min="1" max="5" /></th>
+        <th>
+          <p id="app_price"></p>
+        </th>
+      </tr>
+      <tr class="main_course">
+        <th>Main Course</th>
+        <th>
+          <select name="main_course" id="main_course">
+            <option value="" selected disabled hidden>Please Select</option>
+            <option value="canard">Confit de Canard</option>
+            <option value="beef">Boeuf Bourguignon</option>
+            <option value="fish">Bouillabaisse</option>
+            <option value="lamb">Lamb Shanks with Espagnole</option>
+          </select>
+        </th>
+        <th><input id="main_q" type="number" value="1" min="1" max="5" /></th>
+        <th>
+          <p id="main_price"></p>
+        </th>
+      </tr>
+      <tr class="dessert">
+        <th>Desserts</th>
+        <th>
+          <select name="desserts" id="desserts">
+            <option value="" selected disabled hidden>Please Select</option>
+            <option value="tarte">Tarte au Citron</option>
+            <option value="brulee">Creme Brulee</option>
+          </select>
+        </th>
+        <th>
+          <input id="dessert_q" type="number" value="1" min="1" max="5" />
+        </th>
+        <th>
+          <p id="dess_price"></p>
+        </th>
+      </tr>
+    </thead>
+  </table>
+  <div class="cart">
+    <a href="cart.html" id="cart" onclick="return Gatherdata()">
+      <i class="fas fa-cart-plus"></i><span> &nbsp Add to Cart</span>
+    </a>
+
+    <a href="BA_membership.html" id="member">A member?</a>
+  </div>
+
+  <!--footer-->
+  <footer>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section address">
+          <h3>Address</h3>
+          <p>
+            No, 109, Jalan SS 21/1a, <br />Damansara Utama, <br />47400
+            Petaling Jaya, <br />Selangor
+          </p>
+        </div>
+
+        <div class="footer-section opening-hour">
+          <h3>Opening Hours</h3>
+          <p>Mon - Fri : 11a.m. - 10p.m.<br />Sat - Sun : 11a.m. - 12a.m.</p>
+        </div>
+
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <a href="mailto:bon_appetit@gmail.com">bon_appetit@gmail.com</a><br />
+          <a href="tel:+03-1234 5678">03-1234 5678</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <i onclick="onOroff(this);displayLivechat();" class="fas fa-comment-dots" id="myButton"></i>
+
+    <!-- livechat -->
+    <div class="real-Livechat" id="rLC">
+
+        <div class="real-wrapper">
+            <div class="real-head-text"><img src="agent001.jpg" id="copy" alt="Avatar" class="avatar">agent 007<i
+                    class="fa fa-circle" style="color:rgb(101, 209, 115);font-size:8px;margin-left: 5px;"></i></div>
+            <div class="real-chatlog" id="real-ChatLog">
+                <p></p>
+            </div>
+            <div class="real-field">
+                <input type="text" id="usermsg" value="" placeholder="type a message">
+                <i onclick="Click();Click2();" class="material-icons" value="" id="submitmsg">send</i>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myButton");
+
+        //Show button when user scroll
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+                mybutton.style.display = "block";
+                mybutton.style.color = "grey";
+            } else {
+                // mybutton.style.display = "none";
+
+                mybutton.style.color = "black";
+            }
+        }
+
+    </script>
+</body>
+<script src="table.js" type="text/javascript"></script>
+
+</html>

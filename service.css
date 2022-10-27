@@ -1,0 +1,317 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+* {
+    font-family: "STIX Two Text", serif;
+}
+
+.mySlides {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.back {
+    position: absolute;
+    top: 45%;
+    left: 22.5%;
+    translate: -50% -50%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transform: translateX(calc( 3px));
+    transition: 0.3s;
+}
+
+.next {
+    position: absolute;
+    top: 45%;
+    right: 22.5%;
+    translate: -50% -50%;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transform: translateX(calc(-3px));
+    transition: 0.3s;
+}
+
+.next:hover, .back:hover {
+    transform: translateX(0);
+}
+
+.top-title {
+    font-size: 90px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    right: 18%;
+    transform: translate(-50%, -50%);
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    top: 42%;
+    right: 32.5%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 15px;
+}
+
+.top-text {
+    text-align: right;
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    width: 30%;
+    top: 60%;
+    right: 18.5%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    font-style: italic;
+}
+
+.syiok {
+    width: 12.5%;
+    border: 1px solid #FFD369;
+    position: absolute;
+    top: 95%;
+    right: 0%;
+}
+
+.topic {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    color: black;
+}
+
+.syiok1 {
+    border: 2px solid #FFD369;
+    width: 60%;
+}
+
+.a {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    padding: 20px 0px;
+    font-size: 18px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 10px;
+}
+
+.img1 {
+    height: 300px;
+    width: 35%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* customer-reviews */
+
+.h1-customer-reviews {
+    text-align: center;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customer-review-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    column-gap: 20px;
+}
+
+.customer-review-body {
+    flex: 33.3%;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.fa-star {
+    margin-top: 30px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 23px;
+    color: #222831;
+}
+
+div.customer-reviews-header {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+@media only screen and (max-width:1000px) {
+    .mySlides {
+        width: 70%;
+        height: 300px;
+    }
+    .top-title {
+        font-size: 45px;
+        top: 32.5%;
+        right: 18%;
+    }
+    .sub-title {
+        font-size: 25px;
+        top: 38.5%;
+        right: 23.5%;
+    }
+    .top-text {
+        font-size: 11px;
+        top: 48%;
+        right: 18.5%;
+    }
+    .syiok {
+        width: 12.5%;
+        border: 1px solid #FFD369;
+        top: 95%;
+        right: 0%;
+    }
+    .back {
+        top: 35%;
+        left: 22.5%;
+        font-size: 30px;
+    }
+    .next {
+        top: 35%;
+        right: 22.5%;
+        font-size: 30px;
+    }
+    .img1 {
+        height: 170px;
+        width: 25%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    /* customer-reviews */
+    .h1-customer-reviews {
+        text-align: center;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        width: 40%;
+
+    }
+    .customer-review-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        column-gap: 20px;
+    }
+    .customer-review-body {
+        flex: 33.3%;
+        border: 1px solid black;
+        border-radius: 1%;
+        padding: 50px;
+        margin-bottom: 10px;
+    }
+
+    .customer-reviews{
+        text-align: center;
+        margin-left:50px ;
+        margin-right:50px
+    }
+    .fa-star {
+        font-size: 23px;
+        color: #222831;
+    }
+    div.customer-reviews-header {
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        justify-content: center;
+    }
+    @media only screen and (max-width:1000px) {
+        .mySlides {
+            width: 80%;
+            height: 400px;
+        }
+        .top-title {
+            font-size: 45px;
+            top: 30%;
+            right: 17.5%;
+        }
+        .sub-title {
+            font-size: 25px;
+            top: 35%;
+            right: 22.5%;
+        }
+        .top-text {
+            font-size: 13px;
+            top: 42%;
+            right: 18.5%;
+        }
+        .back {
+            top: 35%;
+            left: 22.5%;
+            font-size: 30px;
+        }
+        .next {
+            top: 35%;
+            right: 22.5%;
+            font-size: 30px;
+        }
+        .img1 {
+            height: 170px;
+            width: 25%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .service {
+            display: flex;
+            flex-direction: column;
+        }
+        .img1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+    }
+    @media only screen and (max-width:700px) {
+        .mySlides {
+            width: 100%;
+            height: 350px;
+        }
+        .top-title {
+            font-size: 45px;
+            top: 54.5%;
+            right: 2%;
+        }
+        .sub-title {
+            font-size: 25px;
+            top: 60.5%;
+            right: 11%;
+        }
+        .top-text {
+            font-size: 11px;
+            top: 70%;
+            right: 18.5%;
+        }
+        .back {
+            top: 58%;
+            left: 12.5%;
+            font-size: 20px;
+        }
+        .next {
+            top: 58%;
+            right: 12.5%;
+            font-size: 20px;
+        }
+    }
+}

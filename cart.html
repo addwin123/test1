@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Out</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&family=STIX+Two+Text&family=STIX+Two+Text:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/76e8c0ea31.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Header-->
+
+    <nav>
+      <div class="logo" style="width: 30%;">
+          <a href="BA_home.html"><img class="pic1" src="Logo.png" ></a>
+      </div>
+      <ul>
+          <li><a href="BA_home.html">Home</a></li>
+          <li><a href="BA_aboutUs.html">About Us</a></li>
+          <li><a href="BA_menu.html">Menu</a></li>
+          <li><a href="BA_service.html">Service</a></li>
+          <li><a href="BA_gallery.html">Gallery</a></li>
+          <li><a href="BA_order.html">Order Online</a></li>
+          <li><a href="BA_contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div id="cart">
+      <h3>
+        Cart
+        <span class="iconcart"><i class="fas fa-shopping-cart"></i></span>
+      </h3>
+      <div id="quantity">
+        <table>
+          <thead>
+            <tr class="head">
+              <th>Menu</th>
+              <th>Quantity</th>
+              <th>Prices (RM)</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="appertizers">
+              <td><p id="app_name"></p></td>
+              <td><p id="app_quantity"></p></td>
+              <td><p id="app_prices"></p></td>
+            </tr>
+            <tr class="main_course">
+              <td><p id="main_name"></p></td>
+              <td><p id="main_quantity"></p></td>
+              <td><p id="main_price"></p></td>
+            </tr>
+            <tr class="dessert">
+              <td><p id="dess_name"></p></td>
+              <td><p id="dess_quantity"></p></td>
+              <td><p id="dess_price"></p></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>Total</p>
+              </td>
+              <td><p id="total"></p></td>
+            </tr>
+          </tbody>
+          <tfoot class="pay_contain">
+            <tr>
+              <td colspan="3">
+                <a
+                  href="payment.html"
+                  onclick="passData()"
+                  class="payment"
+                  >Check Out</a
+                >
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+      <div class="footer-content">
+          <div class="footer-section address">
+              <h3>Address</h3>
+              <p>No, 109, Jalan SS 21/1a, <br>Damansara Utama, <br>47400 Petaling Jaya, <br>Selangor</p>
+          </div>
+
+          <div class="footer-section opening-hour">
+              <h3>Opening Hours</h3>
+              <p>Mon - Fri : 11a.m. - 10p.m.<br>Sat - Sun : 11a.m. - 12a.m.</p>
+          </div>
+
+          <div class="footer-section contact">
+              <h3>Contact Us</h3>
+              <a href="mailto:bon_appetit@gmail.com">bon_appetit@gmail.com</a><br>
+              <a href="tel:+03-1234 5678">03-1234 5678</a>
+          </div>
+      </div>
+    </div>
+  </body>
+  <script src="cart.js" type="text/javascript"></script>
+</html>

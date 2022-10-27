@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment.css" />
+    <link rel="stylesheet" href="basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&family=STIX+Two+Text&family=STIX+Two+Text:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/76e8c0ea31.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Check Out</title>
+  </head>
+
+  <body>
+    <!--Header-->
+
+    <nav>
+      <div class="logo" style="width: 30%;">
+          <a href="BA_home.html"><img class="pic1" src="Logo.png" ></a>
+      </div>
+      <ul>
+          <li><a href="BA_home.html">Home</a></li>
+          <li><a href="BA_aboutUs.html">About Us</a></li>
+          <li><a href="BA_menu.html">Menu</a></li>
+          <li><a href="BA_service.html">Service</a></li>
+          <li><a href="BA_gallery.html">Gallery</a></li>
+          <li><a href="BA_order.html">Order Online</a></li>
+          <li><a href="BA_contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="billing">
+      <div class="col1">
+        <div class="containner">
+          <form action="/action_page.php">
+            <div class="info">
+              <h3>Deliver Address</h3>
+              <!-- Name -->
+              <label for="name"
+                ><i class="fas fa-user"></i>&nbsp Full Name</label
+              >
+              <br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Justin Eng"
+              />
+              <br />
+              <!-- Contact -->
+              <label for="contact"
+                ><i class="fas fa-phone"></i>&nbsp Contact</label
+              ><br />
+              <input
+                type="text"
+                id="cnumber"
+                name="contact"
+                placeholder="+6012-3456789"
+              /><br />
+              <!-- Address -->
+              <label for="address"
+                ><i class="fas fa-id-card"></i>&nbsp Address 1</label
+              ><br />
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="address 1"
+              /><br />
+
+              <label for="address2">Address 2</label><br />
+              <input
+                type="text"
+                id="address2"
+                name="address2"
+                placeholder="address 2"
+              /><br />
+
+              <label for="address3">Address 3</label><br />
+              <input
+                type="text"
+                id="address3"
+                name="address3"
+                placeholder="address 3"
+              /><br />
+
+              <label for="city"><i class="fas fa-building"></i>&nbsp City</label
+              ><br />
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Kuala Lumpur"
+              /><br />
+
+              <label for="state">State</label><br />
+              <input
+                type="text"
+                id="state"
+                name="state"
+                placeholder="Selangor"
+              /><br />
+
+              <label for="zip">Zip Code</label><br />
+              <input type="text" id="zip" name="zip" placeholder="56100" />
+            </div>
+          </form>
+
+          <!-- Payment -->
+          <div class="payment">
+            <h3>Payment</h3>
+            <label for="cc" class="cc">Accepted Card</label>
+            <div class="cc_icon">
+              <i class="fab fa-cc-visa fa-2x" style="color: navy"></i>
+              <i class="fab fa-cc-mastercard fa-2x" style="color: red"></i>
+            </div>
+            <label for="cc_name">Full Name on Card</label><br />
+            <input
+              type="text"
+              name="cc_name"
+              id="cc_name"
+              placeholder="Justin Eng"
+            /><br />
+            <label for="cc_num">Credit Card Number</label><br />
+            <input
+              type="text"
+              name="cc_num"
+              id="cc_num"
+              placeholder="1111-2222-3333-4444"
+            /><br />
+            <label for="exp_month">Exp Month & Year</label><br />
+            <input
+              type="month"
+              name="exp_month"
+              id="exp_month"
+              placeholder="Month / Year"
+            /><br />
+            <label for="cvv">CVV</label><br />
+            <input
+              type="text"
+              name="cvv"
+              id="cvv"
+              maxlength="3"
+              placeholder="123"
+            />
+            <br />
+            <p style="font-weight: 800">
+              Total: RM <span id="totalprice"></span>
+            </p>
+            <a href="#" id="payment" onclick="Alert()">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+      <div class="footer-content">
+          <div class="footer-section address">
+              <h3>Address</h3>
+              <p>No, 109, Jalan SS 21/1a, <br>Damansara Utama, <br>47400 Petaling Jaya, <br>Selangor</p>
+          </div>
+
+          <div class="footer-section opening-hour">
+              <h3>Opening Hours</h3>
+              <p>Mon - Fri : 11a.m. - 10p.m.<br>Sat - Sun : 11a.m. - 12a.m.</p>
+          </div>
+
+          <div class="footer-section contact">
+              <h3>Contact Us</h3>
+              <a href="mailto:bon_appetit@gmail.com">bon_appetit@gmail.com</a><br>
+              <a href="tel:+03-1234 5678">03-1234 5678</a>
+          </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById("totalprice").innerHTML =
+      sessionStorage.getItem("totalprice");
+  </script>
+  <script>
+    function Alert() {
+      alert("Service is not available at the moment!");
+    }
+  </script>
+</html>

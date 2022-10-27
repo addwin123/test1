@@ -1,0 +1,49 @@
+<head>
+  <!-- live chat source -->
+  <script src="https://kit.fontawesome.com/c1e827cb15.js" crossorigin="anonymous"></script>
+  <link href="livechat.css" rel="stylesheet" />
+  <script type="text/javascript" src="livechat.js"></script>
+  <!-- sent -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+  <i onclick="onOroff(this);displayLivechat();" class="fas fa-comment-dots" id="myButton"></i>
+
+  <!-- livechat -->
+  <div class="real-Livechat" id="rLC">
+
+    <div class="real-wrapper">
+      <div class="real-head-text"><img src="agent001.jpg" id="copy" alt="Avatar" class="avatar">agent 007<i
+          class="fa fa-circle" style="color:rgb(101, 209, 115);font-size:8px;margin-left: 5px;"></i></div>
+      <div class="real-chatlog" id="real-ChatLog">
+        <p></p>
+      </div>
+      <div class="real-field">
+        <input type="text" id="usermsg" value="" placeholder="type a message">
+        <i onclick="Click();Click2();" class="material-icons" value="" id="submitmsg">send</i>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myButton");
+
+    //Show button when user scroll
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+        mybutton.style.display = "block";
+        mybutton.style.color = "grey";
+      } else {
+        // mybutton.style.display = "none";
+
+        mybutton.style.color = "black";
+      }
+    }
+
+  </script>
+</body>

@@ -1,0 +1,399 @@
+@charset "utf-8";
+* {
+    font-family: "STIX Two Text", serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+/*middle*/
+
+h1.h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hr1 {
+    height: 1px;
+    width: 70%;
+}
+
+.disney {
+    font-size: 30px;
+}
+
+.form-position {
+    float: left;
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 800px;
+}
+
+#form-style {
+    text-align: left;
+    padding: 50px 250px;
+    border-radius: 5px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    margin: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-width: 10.5cm;
+}
+
+#Fname, #Lname, select, form#form-style textarea#description, form#form-style input[type=email], form#form-style input[type=tel] {
+    padding: 16px 16px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    margin-top: 10px;
+    background-color: #EEEEEE;
+}
+
+#Fname:hover::placeholder, #Lname:hover::placeholder, select:hover::placeholder, form#form-style textarea#description:hover::placeholder, form#form-style input[type=email]:hover::placeholder, form#form-style input[type=tel]:hover::placeholder {
+    color: grey;
+}
+
+#Fname::placeholder, #Lname::placeholder, select::placeholder, form#form-style textarea#description::placeholder, form#form-style input[type=email]::placeholder, form#form-style input[type=tel]::placeholder {
+    color: silver;
+}
+
+#Fname, #Lname {
+    margin-right: 15px;
+
+}
+
+form#form-style textarea#description {
+    width: 100%;
+    padding: 20px 20px;
+    height: 3cm;
+    box-sizing: border-box;
+    min-height: 200px;
+    max-height: 300px;
+    max-width: 380px;
+    min-width: 200px;
+}
+
+form#form-style input[type=email] {
+    width: 350px;
+}
+
+form#form-style input[type=tel] {
+    width: 350px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+*::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 0.1px solid gray;
+}
+
+input[type="radio"]:checked+* {
+    color: black;
+    font-weight: 900;
+}
+
+input[type="radio"]:checked+*::before {
+    background: radial-gradient(black 0%, black 40%, transparent 50%);
+    border-color: black;
+}
+
+/* basic layout */
+
+fieldset {
+    margin: 20px;
+    max-width: 400px;
+    border: 0.01px solid silver;
+}
+
+input[type="radio"]+* {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+form#form-style input[type=submit] {
+    background-color: white;
+    color: grey;
+    border: 0.01px solid silver;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: -100px;
+}
+
+form#form-style input[type=submit]:hover {
+    cursor: pointer;
+    color: black;
+    border: 0.01px solid black;
+}
+
+.form-position, iframe#map {
+    display: flex;
+}
+
+iframe#map {
+    margin: 520px 0px 0px 800px;
+    position: absolute;
+}
+
+div.social-media-icon {
+    display: flex;
+    column-gap: 60px;
+    margin-top: 100px;
+}
+
+#twt, #ms, #insta {
+    background-color: #222831;
+    color: white;
+    border: 20px solid #222831;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#twt {
+    font-size: 32px;
+}
+
+#ms {
+    font-size: 32px;
+}
+
+#insta {
+    font-size: 33px;
+}
+
+#insta:hover, #twt:hover, #ms:hover {
+    color: black;
+    border-color: white;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* social media*/
+
+#contact-icon {
+    font-size: 25px;
+}
+
+#email-icon {
+    font-size: 25px;
+}
+
+.social-media::before, .social-media::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: 1.5px solid black;
+    z-index: -1;
+}
+
+.social-media::before {
+    height: 70%;
+    top: 20%;
+    left: calc(-8px);
+    filter: brightness(0.8);
+}
+
+.social-media::after {
+    height: 50%;
+    top: 30%;
+    left: calc(-14px);
+}
+
+.social-media>a:link {
+    position: relative;
+    height: 120%;
+    box-sizing: border-box;
+    color: #222831;
+    padding-top: 30px;
+    text-decoration: none;
+    background-color: lightgray;
+    transform: translateX(calc(-20px));
+    transition: 0.3s;
+    font-size: 18px;
+    text-align: center;
+}
+
+span#bonemail {
+    padding-left: -50px;
+}
+
+.social-media:hover a:link {
+    transform: translateX(0.1cm);
+}
+
+div.social-media {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 100px;
+    border-left: 2px solid black;
+    position: relative;
+    margin-top: 1cm;
+    cursor: pointer;
+}
+
+/*faq*/
+
+.hr2 {
+    height: 1px;
+    width: 90%;
+}
+
+div.faq {
+    background-color: lightgray;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    text-align: center;
+    min-height: 180px;
+    margin-bottom: 100px;
+}
+
+div.faq>h3 {
+    font-size: 28px;
+}
+
+div.top>a {
+    color: black;
+    font-size: 24px;
+    padding: 2px 2px 2px 2px;
+    text-decoration: none;
+    transition: padding .25s ease-in-out;
+}
+
+.top>a:hover {
+    background-color: white;
+    color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    h1.h1 {
+        width: 480px;
+        margin-left: 100px;
+    }
+    .disney {
+        margin-left: 0px;
+    }
+    .form-position {
+        float: left;
+        margin-left: -230px;
+        position: relative;
+        width: 100%;
+    }
+    form {
+        white-space: nowrap;
+        margin-left: 20px;
+    }
+    select {
+        min-width: 320px;
+    }
+    form#form-style input[type=email], form#form-style input[type=tel] {
+        width: 280px;
+        padding: 12px 20px;
+    }
+    #Fname {
+        width: 120px;
+    }
+    #Lname {
+        width: 120px;
+    }
+    iframe#map {
+        margin-top: 1200px;
+        margin-left: 10%;
+        width: 500px;
+    }
+    form#form-style textarea#description {
+        width: 320px;
+    }
+    div.social-media-icon {
+        margin-top: 200px;
+        margin-left: 390px;
+        margin-right: auto;
+        row-gap: 25px;
+        position: absolute;
+        flex-direction: column;
+    }
+    div.social-media {
+        width: 400px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    div.faq {
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1.h1 {
+        margin-left: -20px;
+    }
+    .hr1 {
+        width: 50%;
+        margin-left: 130px;
+    }
+    .disney {
+        margin-left: -50px;
+        font-size: 20px;
+    }
+    .form-position {
+        float: left;
+        margin-left: -230px;
+        position: relative;
+        width: 100%;
+    }
+    form {
+        white-space: nowrap;
+        margin-left: 20px;
+    }
+    select {
+        min-width: 320px;
+    }
+    form#form-style input[type=email], form#form-style input[type=tel] {
+        width: 280px;
+        padding: 12px 20px;
+    }
+    #Fname {
+        width: 120px;
+    }
+    #Lname {
+        width: 120px;
+    }
+    iframe#map {
+        margin-top: 1200px;
+        margin-left: 5%;
+        width: 400px;
+    }
+    form#form-style textarea#description {
+        width: 320px;
+    }
+    div.social-media-icon {
+        margin-top: 200px;
+        margin-left: 390px;
+        margin-right: auto;
+        row-gap: 25px;
+        position: absolute;
+        flex-direction: column;
+    }
+    div.social-media {
+        width: 400px;
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+}

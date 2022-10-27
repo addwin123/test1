@@ -1,0 +1,118 @@
+/*Menu,Desserts,Appertizers,Main Course*/
+
+.Category {
+  text-align: center;
+}
+
+.Category a {
+  display: inline-block;
+  padding: 12px 0px;
+  text-decoration: none;
+  color: white;
+  width: 33.33%;
+  float: left;
+  background: #222831;
+  font-size: large;
+  font-family: "STIX Two Text", serif;
+}
+
+.Category a:hover {
+  background: #393e46;
+  color: white;
+}
+
+/*H1 CSS codes*/
+
+#appertizers {
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+  /* text-decoration: underline; */
+}
+
+#appertizers:before, #appertizers:after, #Main:before, #Main:after, #desserts:before, #desserts:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #000;
+  margin: auto;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+
+#Main, #desserts {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+  /* text-decoration: underline; */
+}
+
+/*Menu Fieldset Background*/
+
+html,body {
+  background-color: lightgrey;
+  height: 100%;
+}
+
+/*Menu list*/
+
+.header {
+  font-family: "STIX Two Text", serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.descript {
+  font-family: "STIX Two Text", serif;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/*Menu image*/
+
+.Category img {
+  width: 30%;
+  border-radius: 20%;
+  display: block;
+  margin: auto;
+}
+
+/*For Back to Top Scroll*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+#YTBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 45px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 90%;
+  background: #222831;
+}
+  #YTBtn:hover {
+      background-color: #555;
+      color: white;
+  }
+
+@media only screen and (max-width:1080px) {
+  #main, #appertizers, #desserts {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

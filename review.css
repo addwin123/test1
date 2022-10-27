@@ -1,0 +1,191 @@
+h3{
+    font-family: "STIX Two Text", serif;
+    font-size: 20px;
+    position:relative;
+    
+}
+h1{
+    text-align:center;
+    font-family: "STIX Two Text", serif;
+
+}
+div{
+    font-family: "STIX Two Text", serif;
+    
+}
+input[type=text]{
+  width:300px;
+  border:1px solid #222831;
+  border-radius: 4px;
+  font-family: "STIX Two Text", serif;
+}
+body{
+  overflow-x: hidden;
+}
+.main{
+    font-style: normal;
+    align-items: 500px;
+    text-align:center;
+    padding:35px 0px;
+    background-color: #EEEEEE;
+}
+@media (max-width: 992px){
+  .ufvu{
+    width: 100% !important;
+  }
+  .eihhfei{
+    display: block !important;
+  }
+}
+@media (max-width: 450px){
+  .rating{
+    width: 320px !important;
+  }
+  .star-widget label {
+    font-size: 25px !important;
+  }
+}
+.rating{
+    position: relative;
+    
+   
+    width: 400px;
+    background: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:0 auto;
+  }
+  .rating .post{
+    display: none;
+  }
+  .rating h3{
+    float:left;
+    font-size:20px;
+  }
+  .rating .text{
+    font-size: 25px;
+    font-family: "STIX Two Text", serif !important;
+    color: #222831;
+    font-weight: 500;
+  }
+  .rating .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .rating .edit:hover{
+    text-decoration: underline;
+  }
+  .rating .star-widget input{
+    display: none;
+  }
+  .star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+  input:not(:checked) ~ label:hover,
+  input:not(:checked) ~ label:hover ~ label{
+    color: #fd4;
+  }
+  input:checked ~ label{
+    color: #fd4;
+  }
+  input#star1:checked ~ label{
+    color: #FFD369;
+    text-shadow: 0 0 20px #952;
+  }
+  #star5:checked ~ form header:before{
+    font-family: "STIX Two Text", serif !important;
+    content: "Awful.🤮 Never coming back! ";
+  }
+  #star4:checked ~ form header:before{
+  
+    content: "Bad.😒 Poor experience. ";
+  }
+  #star3:checked ~ form header:before{
+
+    content: "Okay.🤷 Could be better.";
+  }
+  #star2:checked ~ form header:before{
+   
+    content: "Good.😋 Would come back. ";
+  }
+  #star1:checked ~ form header:before{
+ 
+    content: "Perfect!😍 Loved it! ";
+  }
+  .rating form{
+    display: none;
+    padding-left: 18%;
+  }
+  input:checked ~ form{
+    display: block;
+  }
+  form header{
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  form .textarea{
+    
+    border-radius: 10px ;
+    height: 100px;
+    width: -80%;
+    
+    overflow: hidden;
+  }
+  form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #EEEEEE;
+    border: 1px solid #393e46;
+    background: #222831;
+    padding:10px;
+    
+    font-size: 17px;
+    resize: none;;
+  }
+  .textarea textarea:focus{
+    border:none;
+    border-color: #EEEEEE;
+  }
+  form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  form .btn button{
+    border-radius: 10px ;
+    border:1px solid #444;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background: #222831;
+    color: #EEEEEE;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form .btn button:hover{
+    
+    background: #393e46;
+    
+  }

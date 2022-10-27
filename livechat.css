@@ -1,0 +1,117 @@
+
+/* livechat */
+
+.real-Livechat {
+    display: none;
+}
+
+.displayLivechat {
+    display: block;
+}
+
+.real-wrapper {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    height: 400px;
+    width: 380px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 4px solid black;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    background-color: white;
+}
+
+.real-head-text {
+    line-height: 40px;
+    padding: 10px 20px;
+    background: -webkit-linear-gradient(left, #222831, #393E46);
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    max-width: 390px;
+}
+
+.real-chatlog {
+    overflow: auto;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding: 10px;
+    background: #fff;
+    height: 260px;
+    width: 360px;
+    overflow: auto;
+    border-radius: 4px;
+    overflow-wrap: break-word;
+}
+
+.real-field {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    min-width: 365px;
+    width: 300px;
+    padding-left: 10px;
+    left: 140px;
+    background-color: white;
+}
+
+.material-icons {
+    margin-top: 5px;
+    font-size: 31px;
+    flex: 1%;
+    cursor: pointer;
+    width: 20%;
+}
+
+.real-field input {
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    flex: 99%;
+    height: 33px;
+}
+
+.real-field input::placeholder {
+    color: silver;
+}
+
+.real-field input:focus::placeholder {
+    color: grey;
+}
+
+img.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+#pic {
+    margin-left: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#myButton {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 35px;
+    opacity: 0.6;
+    transition: 0.3;
+}
+
+#myButton:hover {
+    opacity: 1;
+}
+
+
+

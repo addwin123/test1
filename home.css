@@ -1,0 +1,389 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap%27');
+* {
+    font-family: "STIX Two Text", serif;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
+/* ANIMATION BACKGROUND */
+
+.home-top {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("Background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: slide 10s infinite;
+    opacity: 0.7;
+    object-fit: cover;
+    object-position: center;
+}
+
+.animation_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.animation_content h1 {
+    color: #EEEEEE;
+    font-size: 60px;
+    letter-spacing: 16px;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url("Background1.jpg");
+    }
+    33% {
+        background-image: url("background2.jpg");
+    }
+    67% {
+        background-image: url("Background3.jpg");
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    /* ABOUT US */
+    .aboutUs {
+        width: 100%;
+        height: 45%;
+    }
+    .container {
+        width: 80%;
+        display: block;
+        margin: 5px auto;
+        padding-top: 50px;
+    }
+    .content-section {
+        float: right;
+        width: 55%;
+    }
+    .image-section {
+        float: left;
+        width: 40%;
+    }
+    .image-section img {
+        width: 100%;
+        height: 300px;
+    }
+    .button {
+        padding: 10px 10px;
+        border: none;
+        font-size: 18px;
+        border-radius: 50px;
+        box-shadow: #393E46;
+        cursor: pointer;
+        width: 120px;
+        text-align: center;
+        border: 3px solid #393E46;
+    }
+    .button a {
+        color: #393E46;
+        text-decoration: none;
+        width: 100%;
+    }
+    .button:hover {
+        /* transform: scale(1.05); */
+        background-color: #393E46;
+        color: #FFD369;
+    }
+    .button a:hover {
+        color: #FFD369;
+    }
+    /* HAPPENING NOW */
+    .happening {
+        width: 80%;
+        border: 5px double #393E46;
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    #title2 {
+        text-align: center;
+    }
+    .image-img {
+        width: 300px;
+        height: 250px;
+        padding-left: 80px;
+    }
+    .happening-content {
+        display: flex;
+    }
+    .happening h3 {
+        text-align: center;
+        padding-left: 80px;
+    }
+    .happening-section {
+        position: relative;
+    }
+    .happening-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 80px;
+        /* width: 100%;
+    height: 100%; */
+        width: 300px;
+        height: 250px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #EEEEEE;
+        /*   font-family:; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+        backdrop-filter: blur(5px);
+        /* blur effect*/
+    }
+    .happening-overlay:hover {
+        opacity: 1;
+    }
+    .happening-overlay>* {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+    .happening-overlay:hover>* {
+        transform: translateY(0);
+    }
+    .happening-description {
+        padding: 20px;
+        text-align: center;
+    }
+    /* RESERVATION */
+    .reservation {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .title {
+        margin-top: 50px;
+    }
+    .reservation h2 {
+        text-align: center;
+        margin: auto;
+        margin-left: 350px;
+        margin-right: 400px;
+        font-size: 30px;
+        letter-spacing: 10px;
+        color: #222831;
+    }
+    #title1 {
+        font-family: 'Nova Mono', monospace;
+    }
+    #title3 {
+        font-family: 'Dancing Script', cursive;
+    }
+    .reservation form {
+        margin-top: 30px;
+        margin-right: 100px;
+        line-height: 2.3;
+        font-size: 20px;
+    }
+    input, select {
+        box-sizing: border-box;
+        background-color: lightgray;
+        width: 150px;
+        height: 30px;
+    }
+    .btn {
+        color: #393E46;
+        margin-left: 40px;
+        padding: 5px 20px;
+        border: 3px solid #393E46;
+        font-size: 18px;
+        border-radius: 80px;
+        /* box-shadow: ; */
+        cursor: pointer;
+        background-color: lightgray;
+    }
+    .btn:hover {
+        background-color: #393E46;
+        color: #FFD369;
+        transform: scale(1.03);
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    /* ABOUT US */
+    .container {
+        width: 100%;
+        display: block;
+        margin-left:40px ;
+        padding-top: 30px;
+    }
+    .image-section img {
+        width: 90%;
+        height: 300px;
+        object-fit: cover;
+
+    }
+    .content-section{
+        margin-top:0;
+        width: 80%;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .title h2{
+        letter-spacing: 10px;
+    }
+
+    .content p{
+        text-align: justify;
+    }
+
+    .button {
+        padding: 10px 10px;
+        border: none;
+        font-size: 18px;
+        border-radius: 50px;
+        box-shadow: #393E46;
+        cursor: pointer;
+        width: 120px;
+        text-align: center;
+        border: 3px solid #393E46;
+        margin-left:220px ;
+    }
+    .button a {
+        color: #393E46;
+        text-decoration: none;
+        width: 100%;
+    }
+    .button:hover {
+        /* transform: scale(1.05); */
+        background-color: #393E46;
+        color: #FFD369;
+    }
+    .button a:hover {
+        color: #FFD369;
+    }
+
+    /* HAPPENING NOW */
+    .happening {
+        width: 70%;
+        border: 5px double #393E46;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    #title2 {
+        text-align: center;
+        letter-spacing: 7px;
+    }
+
+    .image-img{
+        width: 70%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .happening h3 {
+        padding-left: 80px;
+    }
+    
+    #h3{
+        padding-left: 110px;
+    }
+
+    .happening-section{
+        width: 90%;
+        margin-left:100px ;
+        position: relative;
+    }
+    .happening-description{
+        width: 70%;
+        text-align: center;
+    }
+
+    .happening-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* margin-left: 40px; */
+        width: 70%;
+        height: 250px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #EEEEEE;
+        /*   font-family:; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+        backdrop-filter: blur(5px);
+        /* blur effect*/
+    }
+    .happening-overlay:hover {
+        opacity: 1;
+    }
+    .happening-overlay>* {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+    .happening-overlay:hover>* {
+        transform: translateY(0);
+    }
+
+    /* RESERVATION */
+    .reservation {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .title {
+        margin-top: 60px;
+    }
+    .reservation h2 {
+        text-align: center;
+        margin: auto;
+        margin-left: 130px;
+        margin-right: 100px;
+        font-size: 30px;
+        letter-spacing: 10px;
+        color: #222831;
+    }
+    #title1 {
+        font-family: 'Nova Mono', monospace;
+    }
+    #title3 {
+        font-family: 'Dancing Script', cursive;
+    }
+    .reservation form {
+        margin-top: 30px;
+        margin-right: 100px;
+        line-height: 2.3;
+        font-size: 20px;
+    }
+    input, select {
+        box-sizing: border-box;   
+        width: 150px;
+        height: 30px;
+        background-color: lightgray;
+    }
+    .btn {
+        color: #393E46;
+        margin-left: 40px;
+        padding: 5px 20px;
+        border: 3px solid #393E46;
+        font-size: 18px;
+        border-radius: 80px;
+        /* box-shadow: ; */
+        cursor: pointer;
+        background-color: lightgray;
+    }
+    .btn:hover {
+        background-color: #393E46;
+        color: #FFD369;
+        transform: scale(1.03);
+    }
+}

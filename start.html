@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://kit.fontawesome.com/c1e827cb15.js" crossorigin="anonymous"></script>
+    <link href="start.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&family=STIX+Two+Text&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+
+    <div class="liveChat" id="LC">
+
+        <div class="wrapper">
+
+
+            <div class="head-text">
+                Let's chat now
+            </div>
+            <div class="chat-box">
+
+                <div class="desc-text">Please fill out the form below to start chatting with the next available
+                    agent.
+                </div>
+                <p id="alert"></p>
+                <form action='#' id="form">
+
+                    <div class="field">
+                        <input type="text" placeholder="Your Name" id="name" required>
+                    </div>
+
+                    <div class="field">
+                        <input type="email" placeholder="Email Adress" id="email" required>
+                    </div>
+
+                    <div class="field">
+                        <input type="submit" onclick="validateForm();notMyfunction3();" value="Start Chat">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <i onclick="onOroff(this);displayLivechat();" class="fas fa-comment-dots" id="myButton"></i>
+
+
+</body>
+<script>
+    function onOroff(x) {
+        x.classList.toggle("fa-times-circle");
+    }
+    function displayLivechat() {
+        var element = document.getElementById("LC");//toggle between classes
+        element.classList.toggle("displayLivechat");
+    }
+    function notMyfunction3() {
+        var x = document.getElementById("form");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+            document.getElementById("alert").innerHTML
+                = '<form action="2.html"><div style="margin-top:50px;border:0.5px solid silver;width:350px;margin-left:20px;background-color:white"><p style="font-size:13px;margin-left:20px;max-width:300px;color:black;"><input type="checkbox" id="aCcept" name="accept" required>I understand and acknowledge that Bon <p style="margin-left:30px;width:320px;color:black;font-size:13px">Appetit (with its registered office in 109, Jalan SS 21/1a, Damansara Utama, 47400 Petaling Jaya, Selangor) is the controller of my personal data. <p style="margin-left:30px;width:320px;color:black;font-size:13px">I understand and acknowledge that any of my personal data will be processed and transmitted in accordance with the General Data Protection Regulation (GDPR).<p></p></p></p></p></div><input type="submit" value="submit" style="width:92%;margin-left:20px"></form>';
+        }
+    }
+
+    function validateForm() {
+        let x = document.forms["form"]["name"].value;
+        let y = document.forms["form"]["email"].value;
+
+        if (x != "" && y != "") {
+            alert("Thanks for your submission");
+            return true;
+        }
+        else
+        alert("guest mode on");
+            return false;
+    }
+
+
+
+</script>
+
+</html>
